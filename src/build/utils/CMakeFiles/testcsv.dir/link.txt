@@ -1,0 +1,1 @@
+/usr/bin/gcc      CMakeFiles/testcsv.dir/test.c.o  -o testcsv -rdynamic -L/home/rann/math/hungarian/src/build/libhungarian 

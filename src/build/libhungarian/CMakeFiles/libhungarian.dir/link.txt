@@ -1,0 +1,2 @@
+/usr/bin/ar cr liblibhungarian.a  CMakeFiles/libhungarian.dir/hungarian.c.o
+/usr/bin/ranlib liblibhungarian.a

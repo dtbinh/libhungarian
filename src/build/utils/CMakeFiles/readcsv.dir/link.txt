@@ -1,0 +1,2 @@
+/usr/bin/ar cr libreadcsv.a  CMakeFiles/readcsv.dir/readcsv.c.o
+/usr/bin/ranlib libreadcsv.a

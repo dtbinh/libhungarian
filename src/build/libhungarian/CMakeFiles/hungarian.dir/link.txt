@@ -1,0 +1,1 @@
+/usr/bin/gcc  -fPIC    -shared -Wl,-soname,libhungarian.so -o libhungarian.so CMakeFiles/hungarian.dir/hungarian.c.o -L/home/rann/math/hungarian/src/build/libhungarian -L/home/rann/math/hungarian/src/build/utils -L/usr/local/MATLAB/R2012a/bin/glnxa64 

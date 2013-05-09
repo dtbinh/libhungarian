@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rann/math/hungarian/src/libhungarian/hungarian.c
+stdio.h
+-
+stdlib.h
+-
+hungarian.h
+/home/rann/math/hungarian/src/libhungarian/hungarian.h
+
+/home/rann/math/hungarian/src/libhungarian/hungarian.h
+
