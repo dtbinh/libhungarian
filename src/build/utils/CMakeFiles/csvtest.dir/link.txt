@@ -1,1 +1,0 @@
-/usr/bin/gcc      CMakeFiles/csvtest.dir/test.c.o  -o csvtest -rdynamic -L/home/rann/math/hungarian/src/build/libhungarian -L/home/rann/math/hungarian/src/build/utils -L/usr/local/MATLAB/R2012a/bin/glnxa64 libreadcsv.a -Wl,-rpath,/home/rann/math/hungarian/src/build/libhungarian:/home/rann/math/hungarian/src/build/utils:/usr/local/MATLAB/R2012a/bin/glnxa64 

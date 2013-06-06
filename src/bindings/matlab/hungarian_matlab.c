@@ -39,6 +39,31 @@ double ** make2dArray( int x, int y ) {
     return array_ptr;
 }
 
+
+void Free2DArray(double ** Array, int y)
+{
+	int i;
+
+	for( i=0; i<y; i++ ) {
+		free(Array[i]);
+	}
+
+	free(Array);
+}
+
+void hungarian_free(hungarian_problem_t* p) {
+  int i;
+  for(i=0; i<p->num_rows; i++) {
+    free(p->cost[i]);
+    free(p->assignment[i]);
+  }
+  free(p->cost);
+  free(p->assignment);
+  p->cost = NULL;
+  p->assignment = NULL;
+}
+
+
 void mexFunction( int nlhs, mxArray  *plhs[], int nrhs, const mxArray  *prhs[] ) {
 
 	int max_row,max_col;	/* row and column size, resp. */
@@ -83,8 +108,9 @@ void mexFunction( int nlhs, mxArray  *plhs[], int nrhs, const mxArray  *prhs[] )
 		}
 	}
 	
-	free(csv_struct_ptr.csv_data);  /* Freedom from the yoke of tyrrany! (a.k.a. this little module really shouldn't leak memory) */
 	
+	Free2DArray(csv_struct_ptr.csv_data,max_row);  /* Freedom from the yoke of tyrrany! (a.k.a. this little module really shouldn't leak memory) */
+	hungarian_free(&p);
 }
 
 
