@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.6)
 project(LIBHUNGARIAN)
 
+set(CMAKE_BUILD_TYPE Release)
+
 set(MATLAB_MEXFILE_EXT mexa64)
 
 set(CMAKE_CXX_FLAGS "-g -Wall")
